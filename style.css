@@ -1,0 +1,524 @@
+:root {
+    --bg: #10120f;
+    --panel: #1b2019;
+    --lime: #b7ef35;
+    --text: #f4f5f1;
+    --muted: #b9c0b3;
+    --line: #343b30
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: #f6f7f3;
+    color: #20251e;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6
+}
+
+.site-header {
+    background: #10120f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px max(5%, calc((100% - 1180px)/2));
+    gap: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 20
+}
+
+.brand {
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    font-size: 1.45rem;
+    letter-spacing: 1px
+}
+
+.brand span {
+    color: var(--lime)
+}
+
+.brand small {
+    display: block;
+    font-size: .58rem;
+    letter-spacing: 3px;
+    color: #c3c9bd
+}
+
+.main-nav {
+    display: flex;
+    gap: 22px;
+    align-items: center
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .93rem
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    color: var(--lime)
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: white;
+    border: 1px solid #66705c;
+    border-radius: 6px;
+    padding: 7px 12px;
+    font-size: 1.3rem
+}
+
+.hero {
+    min-height: 540px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .86), rgba(0, 0, 0, .25)), url("images/gym-banner.jpg") center/cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 70px max(7%, calc((100% - 1100px)/2))
+}
+
+.hero-content {
+    max-width: 570px
+}
+
+.hero h1 {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.05;
+    margin: 8px 0 18px
+}
+
+.hero h1 span {
+    color: var(--lime)
+}
+
+.hero p {
+    font-size: 1.1rem
+}
+
+.eyebrow {
+    color: #91c91c;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: .82rem
+}
+
+.btn {
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+    background: var(--lime);
+    color: #17200d;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 12px 22px;
+    cursor: pointer;
+    margin-top: 12px
+}
+
+.btn:hover {
+    background: #d0ff68;
+    transform: translateY(-1px)
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #8bbd29;
+    color: #27351a
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: auto
+}
+
+.section {
+    padding: 65px 0
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 28px
+}
+
+.section-heading h2,
+.section h2 {
+    font-size: 2rem;
+    margin: 0 0 12px
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    padding-top: 35px;
+    padding-bottom: 35px
+}
+
+.feature-grid article,
+.plan-card,
+.class-item,
+.form-card {
+    background: white;
+    border: 1px solid #e2e6dc;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(24, 35, 15, .07)
+}
+
+.feature-grid article {
+    text-align: center;
+    padding: 22px
+}
+
+.feature-grid img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain
+}
+
+.feature-grid h2 {
+    font-size: 1.05rem
+}
+
+.feature-grid p,
+.plan-card li,
+.notice {
+    color: #60685a
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px
+}
+
+.plan-card {
+    padding: 0 0 24px;
+    overflow: hidden;
+    text-align: center
+}
+
+.plan-card>img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover
+}
+
+.plan-card h2,
+.plan-card h3 {
+    margin: 15px 10px 0
+}
+
+.plan-card ul {
+    text-align: left;
+    display: inline-block;
+    padding-left: 22px
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #4d7412;
+    margin: 8px
+}
+
+.price small {
+    font-size: .9rem;
+    color: #697160
+}
+
+.featured {
+    border: 2px solid #8fbd2d
+}
+
+.alt {
+    background: #e9eee2
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px
+}
+
+.gallery figure {
+    margin: 0;
+    background: white;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px #17200d14
+}
+
+.gallery img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    cursor: zoom-in
+}
+
+.gallery figcaption {
+    padding: 14px;
+    font-weight: 700
+}
+
+.gallery figcaption h2 {
+    font-size: 1.1rem;
+    margin: 0
+}
+
+.gallery figcaption p {
+    font-weight: 400;
+    color: #60685a
+}
+
+.center {
+    text-align: center
+}
+
+.page-banner {
+    background: #151a12;
+    color: white;
+    text-align: center;
+    padding: 55px 5%
+}
+
+.page-banner h1 {
+    font-size: 2.5rem;
+    margin: 0
+}
+
+.page-banner p {
+    color: #d1d9c9;
+    margin: 5px
+}
+
+.narrow {
+    max-width: 780px
+}
+
+.narrow h2 {
+    margin-top: 28px
+}
+
+.form-card {
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px
+}
+
+.form-row label,
+.search-label {
+    font-weight: 700
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea,
+.search-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbc4b3;
+    border-radius: 5px;
+    font: inherit;
+    background: #fff
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus,
+.search-input:focus {
+    outline: 2px solid #9bcf2c;
+    border-color: #719a1c
+}
+
+.form-status {
+    min-height: 24px;
+    font-weight: 700
+}
+
+.form-status.error {
+    color: #a32121
+}
+
+.form-status.success {
+    color: #316b12
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding-top: 45px;
+    padding-bottom: 65px
+}
+
+.map-frame {
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.map-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0
+}
+
+.site-footer {
+    background: #10120f;
+    color: #e9eee2;
+    text-align: center;
+    padding: 30px 5%;
+    margin-top: 20px
+}
+
+.site-footer a {
+    color: var(--lime)
+}
+
+.site-footer p {
+    margin: 5px
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .92);
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+    padding: 5%
+}
+
+.lightbox.open {
+    display: flex
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain
+}
+
+.lightbox-close {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 2.5rem;
+    color: white;
+    background: none;
+    border: 0;
+    cursor: pointer
+}
+
+.search-input {
+    max-width: 450px;
+    margin: 0 0 18px
+}
+
+.class-item[hidden] {
+    display: none
+}
+
+.notice {
+    background: #eef4e6;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 25px
+}
+
+@media(max-width:800px) {
+    .site-header {
+        flex-wrap: wrap
+    }
+
+    .menu-toggle {
+        display: block
+    }
+
+    .main-nav {
+        display: none;
+        flex-basis: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 0
+    }
+
+    .main-nav.open {
+        display: flex
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:520px) {
+    .hero {
+        min-height: 470px;
+        padding: 45px 7%
+    }
+
+    .hero h1 {
+        font-size: 2.8rem
+    }
+
+    .feature-grid,
+    .cards,
+    .gallery {
+        grid-template-columns: 1fr
+    }
+
+    .plan-card>img,
+    .gallery img {
+        height: 220px
+    }
+
+    .section {
+        padding: 45px 0
+    }
+
+    .page-banner h1 {
+        font-size: 2rem
+    }
+
+    .form-card {
+        padding: 18px
+    }
+}

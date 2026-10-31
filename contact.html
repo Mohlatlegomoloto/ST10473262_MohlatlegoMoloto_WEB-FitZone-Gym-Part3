@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact FitZone Gym | Pretoria Address and Message Form</title>
+  <meta name="description"
+    content="Contact FitZone Gym in Pretoria by phone, email or the online contact form. Find our address and opening hours.">
+  <meta name="keywords" content="contact FitZone Gym, gym address Pretoria, gym phone number, gym email">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="FitZone Gym">
+  <link rel="canonical" href="https://mohlatlegomoloto.github.io/FitZone-Gym/">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="FitZone Gym home"><span>FIT</span>ZONE <small>STRONGER
+        TOGETHER</small></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="About.html">About</a><a href="Membership.html">Memberships</a><a
+        href="classes.html">Classes</a><a href="enquiry.html">Enquiries</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-banner">
+      <h1>Contact Us</h1>
+      <p>We would like to hear from you.</p>
+    </section>
+    <section class="section container contact-layout">
+      <div>
+        <h2>Visit FitZone Gym</h2>
+        <p><strong>Address:</strong> 39 Segashwane Street, Pretoria, South Africa</p>
+        <p><strong>Telephone:</strong> +27 12 345 6789</p>
+        <p><strong>Email:</strong> <a href="mailto:info@fitzonegym.co.za">info@fitzonegym.co.za</a></p>
+        <p><strong>Hours:</strong> Monday–Sunday, 05:00–22:00</p>
+        <div class="map-frame"><iframe title="Map showing 39 Segashwane Street, Pretoria"
+            src="https://www.google.com/maps?q=39%20Segashwane%20Street%2C%20Pretoria%2C%20South%20Africa&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </div>
+      <form id="contactForm" class="form-card" novalidate>
+        <h2>Send a message</h2>
+        <div class="form-row"><label for="contactName">Full name *</label><input id="contactName" name="name"
+            type="text" minlength="2" maxlength="60" required autocomplete="name"></div>
+        <div class="form-row"><label for="contactEmail">Email address *</label><input id="contactEmail" name="email"
+            type="email" required autocomplete="email"></div>
+        <div class="form-row"><label for="contactPhone">Phone number</label><input id="contactPhone" name="phone"
+            type="tel" pattern="[0-9+() -]{9,15}" title="Enter a valid phone number (9 to 15 characters)"
+            autocomplete="tel"></div>
+        <div class="form-row"><label for="messageType">Message type *</label><select id="messageType" name="type"
+            required>
+            <option value="">Select a message type</option>
+            <option>General question</option>
+            <option>Membership</option>
+            <option>Classes</option>
+            <option>Feedback</option>
+            <option>Other</option>
+          </select></div>
+        <div class="form-row"><label for="contactMessage">Your message *</label><textarea id="contactMessage"
+            name="message" rows="5" minlength="10" maxlength="1000" required></textarea></div>
+        <button class="btn" type="submit">Prepare email</button>
+        <p id="contactFeedback" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p><strong>FitZone Gym</strong> · 39 Segashwane Street, Pretoria, South Africa</p>
+    <p>Telephone: +27 12 345 6789 · Email: <a href="mailto:info@fitzonegym.co.za">info@fitzonegym.co.za</a></p>
+    <p>Monday–Sunday: 05:00–22:00</p><small>© 2026 FitZone Gym. All rights reserved.</small>
+  </footer>
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close"
+      aria-label="Close image">×</button><img src="" alt=""></div>
+  <script src="script.js" defer></script>
+</body>
+
+</html>

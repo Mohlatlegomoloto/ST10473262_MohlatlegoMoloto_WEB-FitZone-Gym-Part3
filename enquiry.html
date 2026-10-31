@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Membership Enquiry | FitZone Gym Pretoria</title>
+  <meta name="description"
+    content="Ask FitZone Gym about membership plans, fitness classes, availability and joining information.">
+  <meta name="keywords" content="gym membership enquiry Pretoria, FitZone membership, fitness class enquiry">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="FitZone Gym">
+  <link rel="canonical" href="https://mohlatlegomoloto.github.io/FitZone-Gym/">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="FitZone Gym home"><span>FIT</span>ZONE <small>STRONGER
+        TOGETHER</small></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="About.html">About</a><a href="Membership.html">Memberships</a><a
+        href="classes.html">Classes</a><a href="enquiry.html">Enquiries</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-banner">
+      <h1>Membership Enquiry</h1>
+      <p>Tell us what you are interested in and receive an on-page response.</p>
+    </section>
+    <section class="section container narrow">
+      <form id="enquiryForm" class="form-card" novalidate>
+        <div class="form-row"><label for="enqName">Full name *</label><input id="enqName" name="name" type="text"
+            minlength="2" maxlength="60" required autocomplete="name"></div>
+        <div class="form-row"><label for="enqEmail">Email address *</label><input id="enqEmail" name="email"
+            type="email" required autocomplete="email"></div>
+        <div class="form-row"><label for="enqPhone">Phone number *</label><input id="enqPhone" name="phone" type="tel"
+            required pattern="[0-9+() -]{9,15}" title="Enter a valid phone number (9 to 15 characters)"
+            autocomplete="tel"></div>
+        <div class="form-row"><label for="enqType">What are you enquiring about? *</label><select id="enqType"
+            name="type" required>
+            <option value="">Select an option</option>
+            <option value="Membership">Membership</option>
+            <option value="Fitness classes">Fitness classes</option>
+            <option value="Gym facilities">Gym facilities</option>
+          </select></div>
+        <div class="form-row"><label for="enqPlan">Preferred membership (if applicable)</label><select id="enqPlan"
+            name="plan">
+            <option value="">Select a plan</option>
+            <option value="Basic">Basic – R299 per month</option>
+            <option value="Standard">Standard – R499 per month</option>
+            <option value="Premium">Premium – R799 per month</option>
+          </select></div>
+        <div class="form-row"><label for="enqMessage">Additional details</label><textarea id="enqMessage" name="message"
+            rows="4" maxlength="500" placeholder="Tell us what you would like to know."></textarea></div>
+        <button class="btn" type="submit">Submit enquiry</button>
+        <p id="enquiryFeedback" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p><strong>FitZone Gym</strong> · 39 Segashwane Street, Pretoria, South Africa</p>
+    <p>Telephone: +27 12 345 6789 · Email: <a href="mailto:info@fitzonegym.co.za">info@fitzonegym.co.za</a></p>
+    <p>Monday–Sunday: 05:00–22:00</p><small>© 2026 FitZone Gym. All rights reserved.</small>
+  </footer>
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close"
+      aria-label="Close image">×</button><img src="" alt=""></div>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
